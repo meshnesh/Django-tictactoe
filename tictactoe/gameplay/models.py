@@ -12,6 +12,9 @@ GAME_STATUS_CHOICES = (
 
 
 class Game(models.Model):
+    """
+    Game class model generates db models for the game.
+    """
     first_player = models.ForeignKey(
         User,
         related_name="games_first_player",
